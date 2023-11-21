@@ -77,3 +77,41 @@ select{
     background-position-x:calc(100% - 20px);
     background-position-y: 20px;
 }
+
+/* Add your existing styles here */
+
+/* Responsive styles for screens smaller than 600px */
+@media only screen and (max-width: 600px) {
+    .card {
+        width: 90%; /* Adjust the width for smaller screens */
+        margin: auto; /* Center the card on smaller screens */
+    }
+
+    .search {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    input {
+        width: 100%; /* Make the input full width on smaller screens */
+        margin-bottom: 10px; /* Add some spacing between input and button */
+    }
+
+    button {
+        width: 100%; /* Make the button full width on smaller screens */
+    }
+
+    .weather {
+        text-align: center;
+    }
+
+    .details {
+        flex-direction: column; /* Stack the columns on smaller screens */
+        text-align: center;
+    }
+
+    .col {
+        margin-bottom: 10px; /* Add spacing between columns on smaller screens */
+    }
+}
